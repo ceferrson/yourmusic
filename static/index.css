@@ -1,0 +1,278 @@
+body {
+  padding:0;
+  margin:0;
+  overflow-x: hidden;
+  font-family:'Quicksand';
+}
+
+@font-face {
+font-family:"Quicksand";
+src: url(Quicksand-Medium.ttf);
+}
+
+.nav {
+  background-image: linear-gradient(to right top , #d70cc9,#3f8a91);
+  height:8vh;
+  max-width:100%;
+}
+
+
+
+section {
+background-image: linear-gradient(to top right ,#3f8a91 ,#d70cc9);
+height: 95vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.main {
+background-color: #1e1e1e;
+position:relative;
+}
+
+
+#sidebar {
+display:flex;
+flex-direction:column;
+background-color: rgba(31, 55, 70, 0.7);
+color: #efeee0;
+position:fixed;
+top:8%;
+right:0;
+width:60%;
+height:100vh;
+transform: translateX(100%);
+transition: transform 0.3s ease;
+z-index:1;
+}
+
+#sidebar.sidebar-open {
+transform: translateX(0%);
+}
+
+
+#sidebar a {
+color:white;
+text-decoration:none;
+font-family:'Quicksand';
+font-size:1.1em;
+font-weight:100;
+}
+
+
+#sidebar li div {
+transition: transform 0.3s ease;
+}
+
+#sidebar li div:hover {
+transform: scale(1.05);
+}
+
+
+#sidebar li {
+list-style:none;
+margin-top:20px;
+padding-left:10px;
+}
+
+
+.sidebar-closed {
+right:0px;
+}
+
+#sidebar img {
+position:relative;
+margin-right:10px;
+}
+
+#sidebar span {
+position:relative;
+}
+
+.sidebar-elements {
+padding-top:15px;
+}
+
+#hamburger-menu {
+display: block;
+width: 30px;
+height: 20px;
+position: absolute;
+cursor: pointer;
+top: 22px;
+right: 12px;
+}
+
+.line {
+width: 80%;
+height: 2.5px;
+background-color: #efeee0;
+border-radius: 2px;
+margin: 4px;
+}
+
+
+/* Css properties for sidebar vectors and text */
+
+.playlist-image {
+width:27px;
+right:3px;
+}
+
+.favorite-image {
+width:35px;
+right:7px;
+}
+
+.profile-image {
+width:29px;
+height:30px;
+right:4px;
+}
+
+.logout-image {
+width:29px;
+right:2px;
+}
+
+.home-image {
+width:38px;
+right:9px;
+}
+
+.logo {
+  position:relative;
+  width:40%;
+  bottom:100px;
+  left:15px;
+}
+
+.span-home {
+top:4px;
+right:1.5px;
+}
+
+.span-playlist {
+top:3px;
+left:9px;
+}
+
+.span-favorite{
+top:3px;
+}
+
+.span-profile {
+left:8px;
+top:5px;
+}
+
+.span-logout {
+left:8px;
+}
+
+.query-staff {
+position:fixed;
+display:flex;
+flex-direction:column;
+width:30px;
+transition: width 2s;
+position:relative;
+align-items:center;
+top:10%;
+}
+
+
+.query-staff select,input {
+width:200px;
+margin-top:10px;
+border-radius:10px;
+border: 3px solid white;
+font-family:"Quicksand";
+/*background-image: linear-gradient(to top right ,#bac3a6 ,#2592b3);*/
+}
+
+
+.query-staff button {
+width:100px;
+height:35px;
+margin-top:15px;
+border-radius:20px;
+border:1px solid white;
+background-color: rgb(35, 184, 35);
+color:white;
+font-weight: 500;
+z-index: 2;
+}
+
+.song-result {
+  display:flex;
+  align-items: center;
+  margin-top:15px;
+  background-color: rgba(0,0,0, 0.0);
+  position:relative;
+  border-radius: 20px;
+}
+
+.result-div {
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  position:absolute;
+  bottom:110%;
+  /*transform: translateX(-15%); */
+}
+
+.result-div img {
+  width:150px;
+  height:150px;
+  
+}
+
+.result-img {
+  display:flex;
+  flex-direction: row;
+}
+
+#audio-container {
+  width: 300px;
+  height: 50px;
+}
+
+#audio-container audio {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+  
+
+
+/*@media (max-width: 620px) {
+#sidebar {
+  width:50%;
+}
+.logo {
+  width:30%;
+  left:1px;
+}
+/*.result-div {
+  display:flex;
+  flex-direction: Column;
+  color: white;
+  position: absolute;
+  top: -5%;
+  transform: translateY(-100%);
+  
+  right: 60%; /* Yeni satır */
+
+
+/*.result-div img {
+  width:100px;
+  height:100px;
+}
+
+}
+

@@ -1,0 +1,46 @@
+#login {
+    font-size: 1.5em;
+    font-family:"Quicksand";
+}
+
+body {
+    font-family: "Quicksand";
+    color: #EFEEE0;
+    height: 90vh;
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url(Quicksand-SemiBold.ttf);
+}
+
+.button {
+    font-family:'Quicksand';
+    background-color:#1FDF64;
+    border-radius: 20px;
+    color: #000000; 
+    font-size: 1.2em;
+    margin-left:0.8em; 
+    width:100px;
+    height:40px;
+}
+
+
+/* for register anchor */
+.text-center a {
+    margin-left: 4px;
+    color:white;
+    text-decoration:none;
+    font-size:1.3em;
+}
+
+a:hover {
+    text-decoration:underline;
+}
+
+
+
+
+
+
+
